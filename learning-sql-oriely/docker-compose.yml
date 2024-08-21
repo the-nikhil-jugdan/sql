@@ -1,0 +1,12 @@
+services:
+  mysql-server:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: nikhil
+      MYSQL_USER: nikhil
+      MYSQL_PASSWORD: nikhil
+      MYSQL_DATABASE: sakila
+    ports:
+      - 3306:3306
+    volumes:
+      - ./mysql-data:/var/lib/mysql
