@@ -29,7 +29,8 @@ create table favourite_food
 desc favourite_food;
 
 # Need to drop favourite_food table to make this command work
-# Modifies column person_id
+
+# Modifies column person_id to create a auto incrementing numeric key
 alter table person
     modify person_id smallint unsigned auto_increment;
 
